@@ -1,5 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import About from './components/About/About';
+import Grandpa from './components/Grandpa/Grandpa';
 import Home from './components/Home/Home';
 import Orders from './components/Orders/Orders';
 import Main from './layouts/Main';
@@ -18,6 +20,14 @@ function App() {
         {
           path: '/orders',
           element: <Orders></Orders>
+        },
+        {
+          path: '/grandpa',
+          element: <Grandpa></Grandpa>
+        },
+        {
+          path: '/about',
+          element: <About></About>
         }
       ]
     }
